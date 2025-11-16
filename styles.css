@@ -102,3 +102,20 @@ h1,h2,h3 { font-family: 'Cinzel', serif; letter-spacing:.5px; }
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Course banner styles */
+.course-banner { 
+  border-bottom: 4px solid rgba(199,164,65,0.12);
+  background: linear-gradient(90deg, var(--emerald), var(--plum));
+  color: #ffffff;
+}
+.course-banner .course-code { 
+  font-family: 'Cinzel', serif;
+  font-size: 1.02rem;
+  letter-spacing: .6px;
+}
+.course-banner .small { opacity: .95; }
+@media (max-width:720px){
+  .course-banner .container { flex-direction:column; gap:.4rem; text-align:center; }
+  .course-banner .text-end { text-align:center; }
+}
